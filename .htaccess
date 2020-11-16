@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?=$1 [L,QSA]
+php_value error_reporting "E_ALL & ~E_NOTICE"
+
+
+
